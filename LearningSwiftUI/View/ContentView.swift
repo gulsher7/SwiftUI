@@ -22,6 +22,17 @@ struct HomePage: View {
                     Text("Longitude: \(locationViewModel.longitude ?? 0.0)")
             Text("Longitude: \(locationViewModel.num ?? 0)")
             Text("make build with xCloude")
+            Button(action: {
+                locationViewModel.startLocation()
+            }){
+                Text("Start tracking")
+            }
+            
+            Button(action: {
+                locationViewModel.stopLocation()
+            }){
+                Text("Stop tracking")
+            }
             
                 }
        
