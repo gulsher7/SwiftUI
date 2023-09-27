@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE11EDCC2AC41443008E9183 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE11EDCB2AC41443008E9183 /* Colors.xcassets */; };
+		FE11EDCE2AC4145B008E9183 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE11EDCD2AC4145B008E9183 /* Colors.swift */; };
+		FE11EDD12AC43CF6008E9183 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE11EDD02AC43CF6008E9183 /* LocationViewModel.swift */; };
 		FEDB5D302AC1751B00E8D199 /* LearningSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB5D2F2AC1751B00E8D199 /* LearningSwiftUIApp.swift */; };
 		FEDB5D322AC1751B00E8D199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDB5D312AC1751B00E8D199 /* ContentView.swift */; };
 		FEDB5D342AC1751D00E8D199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDB5D332AC1751D00E8D199 /* Assets.xcassets */; };
 		FEDB5D372AC1751D00E8D199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDB5D362AC1751D00E8D199 /* Preview Assets.xcassets */; };
+		FEEE27A82AC35B4A0004C25E /* ForEachExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE27A72AC35B4A0004C25E /* ForEachExample.swift */; };
+		FEEE27AA2AC35D5B0004C25E /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE27A92AC35D5B0004C25E /* SafeArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE11EDCB2AC41443008E9183 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FE11EDCD2AC4145B008E9183 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FE11EDCF2AC43A80008E9183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FE11EDD02AC43CF6008E9183 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		FEDB5D2C2AC1751B00E8D199 /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDB5D2F2AC1751B00E8D199 /* LearningSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftUIApp.swift; sourceTree = "<group>"; };
 		FEDB5D312AC1751B00E8D199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEDB5D332AC1751D00E8D199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEDB5D362AC1751D00E8D199 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEEE27A72AC35B4A0004C25E /* ForEachExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachExample.swift; sourceTree = "<group>"; };
+		FEEE27A92AC35D5B0004C25E /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE11EDCA2AC41405008E9183 /* Contstants */ = {
+			isa = PBXGroup;
+			children = (
+				FE11EDCB2AC41443008E9183 /* Colors.xcassets */,
+				FE11EDCD2AC4145B008E9183 /* Colors.swift */,
+			);
+			path = Contstants;
+			sourceTree = "<group>";
+		};
+		FEC363CE2AC319880067D6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEDB5D312AC1751B00E8D199 /* ContentView.swift */,
+				FEEE27A72AC35B4A0004C25E /* ForEachExample.swift */,
+				FEEE27A92AC35D5B0004C25E /* SafeArea.swift */,
+				FE11EDD02AC43CF6008E9183 /* LocationViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEC363CF2AC319940067D6C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEC363D02AC319A10067D6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FEDB5D232AC1751B00E8D199 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +96,12 @@
 		FEDB5D2E2AC1751B00E8D199 /* LearningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FE11EDCF2AC43A80008E9183 /* Info.plist */,
+				FE11EDCA2AC41405008E9183 /* Contstants */,
+				FEC363D02AC319A10067D6C1 /* Model */,
+				FEC363CF2AC319940067D6C1 /* Controller */,
+				FEC363CE2AC319880067D6C1 /* View */,
 				FEDB5D2F2AC1751B00E8D199 /* LearningSwiftUIApp.swift */,
-				FEDB5D312AC1751B00E8D199 /* ContentView.swift */,
 				FEDB5D332AC1751D00E8D199 /* Assets.xcassets */,
 				FEDB5D352AC1751D00E8D199 /* Preview Content */,
 			);
@@ -126,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDB5D372AC1751D00E8D199 /* Preview Assets.xcassets in Resources */,
+				FE11EDCC2AC41443008E9183 /* Colors.xcassets in Resources */,
 				FEDB5D342AC1751D00E8D199 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDB5D322AC1751B00E8D199 /* ContentView.swift in Sources */,
+				FE11EDD12AC43CF6008E9183 /* LocationViewModel.swift in Sources */,
+				FE11EDCE2AC4145B008E9183 /* Colors.swift in Sources */,
+				FEEE27AA2AC35D5B0004C25E /* SafeArea.swift in Sources */,
+				FEEE27A82AC35B4A0004C25E /* ForEachExample.swift in Sources */,
 				FEDB5D302AC1751B00E8D199 /* LearningSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,11 +319,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = P4WWGLX85H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Loction Required for tracking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iamrich.LearningSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = iamrich.LearningSwiftUI.myapp.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,11 +355,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"LearningSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = P4WWGLX85H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Loction Required for tracking";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Loction Required for tracking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iamrich.LearningSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = iamrich.LearningSwiftUI.myapp.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
